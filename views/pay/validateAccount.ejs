@@ -1,0 +1,7 @@
+<form action="/pay/account/validate" method="POST" class="form-card">
+	<h2 class="form-card-heading">Validate your payment</h2>
+	<input type="text" class="form-control" placeholder="Enter OTP" name="otp" required />
+	<br />
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Validate Payment" />
+	<input type="hidden" name="_csfr" value="<%= _csrf %>" />
+</form>

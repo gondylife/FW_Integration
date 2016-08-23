@@ -1,0 +1,25 @@
+<form action="/disburse" method="POST" class="form-card">
+	<h2 class="form-card-heading">Disburse funds from your merchant account</h2>
+	<select class="form-control" name="country" required>
+		<option selected>Country</option>
+	  	<option value="NG">Nigeria</option>
+	  	<option value="GH">Ghana</option>
+	  	<option value="KE">Kenya</option>
+	  	<option value="US">USA</option>
+	  	<option value="UK">UK</option>
+	</select>
+	<select class="form-control" name="currency" required></select>
+	<input type="text" class="form-control" placeholder="Transfer amount" name="amount" required />
+	<select class="form-control" name="bank" required>
+		<option selected>Recipient bank</option>
+	  	<option value="044">Access bank plc</option>
+	</select>
+	<input type="text" class="form-control" placeholder="Recipient account number" name="account" required />
+	<input type="text" class="form-control" placeholder="Unique reference" name="reference" />
+	<input type="text" class="form-control" placeholder="Description" name="narration" />
+	<input type="text" class="form-control" placeholder="Recipient name" name="recipient" />
+	<input type="hidden" value="Godswill Okwara" name="sendername" />
+	<br />
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Disburse Funds" />
+	<input type="hidden" name="_csfr" value="<%= _csrf %>" />
+</form>

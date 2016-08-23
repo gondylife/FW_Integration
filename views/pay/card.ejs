@@ -1,0 +1,37 @@
+<form action="/pay/card" method="POST" class="form-card">
+	<h2 class="form-card-heading">Pay using your card</h2>
+	<select class="form-control" name="country" required>
+		<option selected>Country</option>
+	  	<option value="NG">Nigeria</option>
+	  	<option value="GH">Ghana</option>
+	  	<option value="KE">Kenya</option>
+	  	<option value="US">USA</option>
+	  	<option value="UK">UK</option>
+	</select>
+	<select class="form-control" name="currency" required></select>
+	<input type="text" class="form-control" placeholder="Amount" name="amount" required />
+	<input type="text" class="form-control" placeholder="Card number" name="cardno" required />
+	<input type="text" class="form-control" placeholder="Expiry month" name="expirymonth" required />
+	<input type="text" class="form-control" placeholder="Expiry year" name="expiryyear" required />
+	<input type="text" class="form-control" placeholder="CVV" name="cvv" required />
+	<!-- <select class="form-control" name="validateoption" required>
+		<option selected>Validate option</option>
+		<option value="SMS">SMS</option>
+	  	<option value="Voice">Voice</option>
+	</select> -->
+	<select class="form-control" name="authmodel" required>
+		<option selected>Auth model</option>
+		<option value="NOAUTH">No Auth</option>
+	  	<option value="PIN">PIN</option>
+	  	<option value="BVN">BVN</option>
+	  	<option value="RANDOM_DEBIT">Random Debit</option>
+	  	<option value="VBVSECURECODE">VBV Secure Code</option>
+	</select>
+	<input type="hidden" class="form-control" placeholder="" id="authfield" name="" />
+	<input type="text" class="form-control" placeholder="Description" name="narration" />
+	<input type="hidden" value="Godswill1234567890" name="custid" />
+	<input type="hidden" value="tk_crHjS2nzEs" name="merchantid" />
+	<br />
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Pay" />
+	<input type="hidden" name="_csfr" value="<%= _csrf %>" />
+</form>

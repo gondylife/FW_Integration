@@ -1,0 +1,9 @@
+<form action="/pay/account" method="POST" class="form-card">
+	<h2 class="form-card-heading">Pay using your account</h2>
+	<input type="text" class="form-control" placeholder="Access bank account number" name="accountno" required />
+	<input type="text" class="form-control" placeholder="Amount" name="billingamount" required />
+	<input type="text" class="form-control" placeholder="Description" name="debitnarration" />
+	<br />
+	<input type="submit" class="btn btn-lg btn-primary btn-block" value="Pay" />
+	<input type="hidden" name="_csfr" value="<%= _csrf %>" />
+</form>
