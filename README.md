@@ -1,3 +1,2 @@
-# FW_Integration
-
-a [Sails](http://sailsjs.org) application
+#FW_Integration
+Integrating All Flutterwave Payment API's
