@@ -26,4 +26,4 @@ OTP: 12345
 <br />
 <br />
 <br />
-The demo of this app can be found at <strong>https://flutterwave.herokuapp.com/</strong>
+The demo for this app can be found at <strong>https://flutterwave.herokuapp.com/</strong>
