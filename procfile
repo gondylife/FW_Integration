@@ -1,1 +1,1 @@
-web: sails lift
+web: npm start
