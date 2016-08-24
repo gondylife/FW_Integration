@@ -26,4 +26,7 @@ OTP: 12345
 <br />
 <br />
 <br />
+<strong>NOTE: </strong>Select Nigeria as country and Currency as NGN for the test card and account to work fine.
+<br />
+<br />
 The demo for this app can be found at <strong>https://flutterwave.herokuapp.com/</strong>
