@@ -6,6 +6,28 @@
  */
 
 module.exports = {
+	encrypt: function() {
+		var data = {
+		    "expiryyear": "" + PayService.encrypt(sails.config.api_key, '2019'),
+		    "authmodel": "" + PayService.encrypt(sails.config.api_key, 'NOAUTH'),
+		    "cvv": "" + PayService.encrypt(sails.config.api_key, '793'),
+		    "cardno": "" + PayService.encrypt(sails.config.api_key, '5637346511023811'), 
+		    "expirymonth": "" + PayService.encrypt(sails.config.api_key, '12'), 
+		    "currency": "" + PayService.encrypt(sails.config.api_key, 'NGN'), 
+		    "amount": "" + PayService.encrypt(sails.config.api_key, '1000'), 
+		    "narration": "" + PayService.encrypt(sails.config.api_key, 'Some Payment for stuff'),
+		    "custid": "" + PayService.encrypt(sails.config.api_key, 'YIKJLJ6779'), 
+		    "merchantid": "tk_snN5ZPBHxO"
+		}
+		console.log(data);
+	},
+	decrypt: function() {
+		var toDecryptText = "Encrypted Text Here";
+		var data = {
+			"responseHTML": "" + PayService.decrypt(sails.config.api_key, toDecryptText)
+		}
+		console.log(data);
+	},
 	tokenizeCard: function(req, res) {
 		PayService.tokenizeCard(req)
 		.then(function(response) {

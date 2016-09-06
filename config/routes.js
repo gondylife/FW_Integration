@@ -48,7 +48,9 @@ module.exports.routes = {
   '/send': {
     view: 'pay/send'
   },
-  '/disburse': 'PayController.disburseFunds'
+  '/disburse': 'PayController.disburseFunds',
+  '/encrypt': 'PayController.encrypt',
+  '/decrypt': 'PayController.decrypt'
 
   /***************************************************************************
   *                                                                          *

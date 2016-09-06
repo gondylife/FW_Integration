@@ -7,7 +7,7 @@
   "dependencies": {
     "ejs": "2.3.4",
     "express-validator": "^2.20.8",
-    "flutterwave": "^2.0.0",
+    "flutterwave": "^2.0.2",
     "grunt": "0.4.5",
     "grunt-contrib-clean": "0.6.0",
     "grunt-contrib-coffee": "0.13.0",
@@ -24,7 +24,7 @@
     "q": "^1.4.1",
     "rc": "1.0.1",
     "sails": "~0.12.1",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "^0.10.10"
   },
   "scripts": {
     "debug": "node debug app.js",
